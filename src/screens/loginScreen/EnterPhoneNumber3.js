@@ -4,8 +4,8 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import { Input } from 'react-native-elements';
 
 import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles } from '../commons'
-import Images from '../../../images'
-import Colors from '../../colorscolors'
+import Images from '../../images'
+import Colors from '../../colors'
 
 handlePress = (navigation) => {
     navigation.navigate('VerificationCode5')

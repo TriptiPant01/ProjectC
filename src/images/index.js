@@ -1,6 +1,6 @@
 const Images = {
     Logo: require('./Logo/Logo.png'),
-    ConfirmBanner: require('./ConfirmBanner/ConfirmBanner')
+    ConfirmBanner: require('./ConfirmBanner/ConfirmBanner.png')
 
 }
 
