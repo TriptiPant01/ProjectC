@@ -123,7 +123,7 @@ export default createAppContainer(
       Home: AppStack,
     },
     {
-      initialRouteName: 'Home',
+      initialRouteName: 'Login',
     }
   )
 );

@@ -6,6 +6,8 @@ const Images = {
     userIcon: require('./UserIcon/UserIcon.png'),
     CardTopHolder: require('./idCard.png'),
     UniversityName: require('./uniName.png'),
+    BarCodeIcon: require('./barcode.png')
+
 }
 
 export default Images;
