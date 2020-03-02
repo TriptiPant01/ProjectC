@@ -7,7 +7,9 @@ import {
   Image,
   Platform,
   Dimensions,
+  ImageBackground,
 } from 'react-native';
+// import {commonText} from '../commons';
 
 import Images from '../Images';
 import Colors from '../Colors';
@@ -20,38 +22,72 @@ const HomeScreen = () => {
         <Image source={Images.CardTopHolder} style={{height: 30, width: 30}} />
       </View>
       <View style={styles.cardHolderWrapper}>
-        <View style={styles.cardHolderImageContainer}>
-          <Image
-            source={require('../Images/idCard.png')}
-            style={styles.imageContainer}
-          />
-          <View style={styles.cardContainer}>
-            <Text>adsf</Text>
+        <ImageBackground
+          source={require('../Images/idCard.png')}
+          style={styles.imageContainer}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'flex-end',
+              flex: 1,
+            }}></View>
+
+          <View
+            style={{
+              flexDirection: 'column',
+              alignItems: 'flex-end',
+              flex: 1 / 1.3,
+            }}>
+            <Image
+              source={Images.UniversityName}
+              style={{alignSelf: 'flex-start', margin: 5}}
+            />
+
+            <Text
+              style={{
+                alignSelf: 'center',
+                margin: 15,
+                fontSize: 21,
+                color: Colors.whiteColor,
+              }}>
+              미인증된 안전 확인증
+            </Text>
           </View>
+        </ImageBackground>
+        <View style={styles.cardBody}>
+          <Text>asdf</Text>
         </View>
       </View>
-      {/* <Text>asdf</Text> */}
+
+      <View style={styles.footerSlider}>
+        <Text>sdf</Text>
+      </View>
     </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  cardContainer: {
+  cardBody: {
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+
+    backgroundColor: Colors.CardColor,
+    flex: 2,
     shadowColor: '#000',
+    elevation: 3,
     shadowOffset: {
       width: 0,
       height: 1,
     },
     shadowOpacity: 0.2,
     shadowRadius: 1.41,
-
-    elevation: 2,
-    backgroundColor: Colors.cardHolderBg,
-    height: height / 2.3,
-    backgroundColor: Colors.cardHolderBg,
-    borderBottomLeftRadius: 14,
-    borderBottomRightRadius: 14,
   },
+  footerSlider: {
+    flex: 1 / 2,
+    height: 30,
+    backgroundColor: 'blue',
+  },
+
   wrapper: {
     flex: 1,
     justifyContent: 'flex-start',
@@ -59,18 +95,19 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.backgroundColor,
   },
   cardHolderWrapper: {
+    height: height / 1.5,
     // width: width - 100,
     // overflow: 'hidden',
+    flex: 3,
   },
   imageContainer: {
-    resizeMode: 'stretch',
-    height: height / 4,
+    resizeMode: 'contain',
+    width: width / 1.3,
+    height: height / 3,
+    borderRadius: 20,
+    backgroundColor: 'red',
   },
-  cardHolderImageContainer: {
-    // height: height / 3,
-    // backgroundColor: 'green',
-    // overflow: 'hidden',
-  },
+
   notificaitonIcon: {
     shadowColor: '#000',
     elevation: 3,
