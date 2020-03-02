@@ -12,7 +12,12 @@ const LoginStack = createStackNavigator({
   LogoScreen1: LogoScreen1
 
 
-})
+}, {
+
+  headerMode: 'none',
+  initialRouteName: 'LogoScreen1'
+}
+)
 
 
 const HomeStack = createStackNavigator({
@@ -120,7 +125,7 @@ export default createAppContainer(
   createSwitchNavigator(
     {
       Login: LoginStack,
-      // Home: AppStack,
+      Home: AppStack,
     },
     {
       initialRouteName: 'Login',
