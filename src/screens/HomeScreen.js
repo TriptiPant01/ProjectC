@@ -9,7 +9,7 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
-// import {commonText} from '../commons';
+import {CommonText} from '../commons';
 
 import Images from '../Images';
 import Colors from '../Colors';
@@ -55,7 +55,30 @@ const HomeScreen = () => {
           </View>
         </ImageBackground>
         <View style={styles.cardBody}>
-          <Text>asdf</Text>
+          <View style={{flexDirection: 'row'}}>
+            <View>
+              <CommonText textInput="이름" externalStyle={{fontSize: 11}} />
+              <CommonText textInput="윤정탁" externalStyle={{fontSize: 31}} />
+              <CommonText textInput="전화번호" externalStyle={{fontSize: 11}} />
+              <CommonText
+                textInput="01234567890"
+                externalStyle={{fontSize: 17}}
+              />
+            </View>
+            <View></View>
+          </View>
+          <View>
+            <CommonText
+              textInput="안전인증이 필요해요."
+              externalStyle={{fontSize: 30}}
+            />
+            <CommonText
+              textInput="안전인증 장소 안내"
+              externalStyle={{fontSize: 16}}
+            />
+          </View>
+
+          <CommonText />
         </View>
       </View>
 
