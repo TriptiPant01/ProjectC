@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import { Header, Avatar, Badge, Icon, withBadge } from 'react-native-elements';
-import Icons from 'react-native-vector-icons/Ionicons';
+// import Icons from 'react-native-vector-icons/Ionicons';
 
 import Images from '../images'
 import Colors from '../colors'
@@ -11,7 +11,7 @@ const MyCustomLeftComponent = ({ navigation }) => {
         style={{ width: 40 }}
         onPress={() => navigation.goBack()}
     >
-        <Icons name="md-arrow-back" size={30} color={Colors.backColor} />
+        {/* <Icons name="md-arrow-back" size={30} color={Colors.backColor} /> */}
     </TouchableOpacity>
 }
 const HeaderList = ({ headerText, backHidden, navigation, bellIcon }) => {
