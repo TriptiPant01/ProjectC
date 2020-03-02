@@ -11,19 +11,19 @@ import {
 } from 'react-native';
 // import {commonText} from '../commons';
 
-import Images from '../Images';
-import Colors from '../Colors';
+import Images from '../images';
+import Colors from '../colors';
 
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 const HomeScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.wrapper}>
       <View style={styles.notificaitonIcon}>
-        <Image source={Images.CardTopHolder} style={{height: 30, width: 30}} />
+        <Image source={Images.CardTopHolder} style={{ height: 30, width: 30 }} />
       </View>
-      <View style={styles.cardHolderWrapper}>
+      {/* <View style={styles.cardHolderWrapper}>
         <ImageBackground
-          source={require('../Images/idCard.png')}
+          source={require('../images/idCard.png')}
           style={styles.imageContainer}>
           <View
             style={{
@@ -40,7 +40,7 @@ const HomeScreen = () => {
             }}>
             <Image
               source={Images.UniversityName}
-              style={{alignSelf: 'flex-start', margin: 5}}
+              style={{ alignSelf: 'flex-start', margin: 5 }}
             />
 
             <Text
@@ -57,7 +57,7 @@ const HomeScreen = () => {
         <View style={styles.cardBody}>
           <Text>asdf</Text>
         </View>
-      </View>
+      </View> */}
 
       <View style={styles.footerSlider}>
         <Text>sdf</Text>

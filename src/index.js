@@ -18,6 +18,10 @@ const LoginStack = createStackNavigator({
 const HomeStack = createStackNavigator({
   HomeScreen: HomeScreen
 
+}, {
+  headerMode: 'none',
+  initialRouteName: 'HomeScreen'
+
 })
 
 
