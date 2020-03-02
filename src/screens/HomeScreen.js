@@ -9,7 +9,7 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
-import {CommonText, CommonButton, Divider} from '../commons';
+import { CommonText, CommonButton, Divider } from '../commons';
 
 import Images from '../images';
 import Colors from '../colors';
@@ -21,7 +21,7 @@ const HomeScreen = () => {
       <View style={styles.notificaitonIcon}>
         <Image source={Images.CardTopHolder} style={{ height: 30, width: 30 }} />
       </View>
-      {/* <View style={styles.cardHolderWrapper}>
+      <View style={styles.cardHolderWrapper}>
         <ImageBackground
           source={require('../images/idCard.png')}
           style={styles.imageContainer}>
@@ -62,12 +62,12 @@ const HomeScreen = () => {
               justifyContent: 'space-between',
             }}>
             <View>
-              <CommonText textInput="이름" externalStyle={{fontSize: 11}} />
-              <CommonText textInput="윤정탁" externalStyle={{fontSize: 31}} />
-              <CommonText textInput="전화번호" externalStyle={{fontSize: 11}} />
+              <CommonText textInput="이름" externalStyle={{ fontSize: 11 }} />
+              <CommonText textInput="윤정탁" externalStyle={{ fontSize: 31 }} />
+              <CommonText textInput="전화번호" externalStyle={{ fontSize: 11 }} />
               <CommonText
                 textInput="01234567890"
-                externalStyle={{fontSize: 17}}
+                externalStyle={{ fontSize: 17 }}
               />
             </View>
             <Divider
@@ -91,11 +91,11 @@ const HomeScreen = () => {
           <View>
             <CommonText
               textInput="안전인증이 필요해요."
-              externalStyle={{fontSize: 30}}
+              externalStyle={{ fontSize: 30 }}
             />
             <CommonText
               textInput="안전인증 장소 안내"
-              externalStyle={{fontSize: 16}}
+              externalStyle={{ fontSize: 16 }}
             />
           </View>
           <CommonButton
@@ -111,7 +111,7 @@ const HomeScreen = () => {
             }}
           />
         </View>
-      </View> */}
+      </View>
 
       <View style={styles.footerSlider}>
         <Text>sdf</Text>

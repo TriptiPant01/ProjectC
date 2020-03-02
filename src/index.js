@@ -63,7 +63,16 @@ HealthInfoStack.navigationOptions = ({ navigation }) => {
   };
 };
 
+HomeStack.navigationOptions = ({ navigation }) => {
+  let tabBarVisible = true;
+  if (navigation.state.index > 0) {
+    tabBarVisible = false;
+  }
 
+  return {
+    tabBarVisible,
+  };
+};
 
 const AppStack = createBottomTabNavigator({
   '홈': HomeStack,

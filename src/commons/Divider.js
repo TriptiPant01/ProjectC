@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-import Colors from '../Colors';
+import Colors from '../colors';
 
-const Divider = ({innerStyle}) => {
-  return <View style={{...styles.dividerStyle, ...innerStyle}}></View>;
+const Divider = ({ innerStyle }) => {
+  return <View style={{ ...styles.dividerStyle, ...innerStyle }}></View>;
 };
 
 const styles = StyleSheet.create({
