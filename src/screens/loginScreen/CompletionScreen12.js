@@ -2,7 +2,7 @@ import React from 'react'
 import { View, TouchableOpacity, Image, Text, Dimensions } from 'react-native'
 import { CommonButton, CommonStyles } from '../../commons'
 
-import Images from '../../../images'
+import Images from '../../images'
 const { width, height } = Dimensions.get('screen')
 
 const CompletionScreen12 = ({ navigation }) => {

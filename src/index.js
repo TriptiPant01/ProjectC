@@ -1,9 +1,11 @@
 import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen } from './screens';
 import React from 'react'
+import { View, Text, Image } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-
-
+import { createBottomTabNavigator } from 'react-navigation-tabs'
+import Images from './images'
 
 
 const LoginStack = createStackNavigator({
@@ -108,7 +110,7 @@ export default createAppContainer(
       Home: AppStack,
     },
     {
-      initialRouteName: 'Login',
+      initialRouteName: 'Home',
     }
   )
 );
