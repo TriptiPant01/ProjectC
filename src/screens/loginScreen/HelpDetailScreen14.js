@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Dimensions } from 'react-native'
 import { Header, CommonStyles, CommonButton } from '../../commons'
 
-import Colors from '../colors'
+import Colors from '../../colors'
 
 const { width } = Dimensions.get('screen')
 

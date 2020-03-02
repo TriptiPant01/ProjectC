@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image } from 'react-native'
 
 
 import { TextInput, TextInputLeftIcon } from '../../commons'
-import Images from '../../../images'
+import Images from '../../images'
 import Colors from '../../colors'
 
 handlePress = (navigation) => {
