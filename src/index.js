@@ -1,12 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
+import {HomeScreen} from './screens';
+
 const Home = () => {
-  return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  );
+  return <HomeScreen />;
 };
 
 export default Home;
