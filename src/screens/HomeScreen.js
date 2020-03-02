@@ -9,7 +9,7 @@ import {
   Dimensions,
   ImageBackground,
 } from 'react-native';
-import {CommonText} from '../commons';
+import {CommonText, CommonButton, Divider} from '../commons';
 
 import Images from '../Images';
 import Colors from '../Colors';
@@ -55,7 +55,12 @@ const HomeScreen = () => {
           </View>
         </ImageBackground>
         <View style={styles.cardBody}>
-          <View style={{flexDirection: 'row'}}>
+          <View
+            style={{
+              paddingTop: 20,
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}>
             <View>
               <CommonText textInput="이름" externalStyle={{fontSize: 11}} />
               <CommonText textInput="윤정탁" externalStyle={{fontSize: 31}} />
@@ -65,7 +70,23 @@ const HomeScreen = () => {
                 externalStyle={{fontSize: 17}}
               />
             </View>
-            <View></View>
+            <Divider
+              innerStyle={{
+                width: StyleSheet.hairlineWidth,
+              }}
+            />
+            <View>
+              <Image
+                source={Images.BarCodeIcon}
+                style={{
+                  width: 120,
+                  height: 120,
+                  resizeMode: 'contain',
+                  // tintColor: 'white',
+                  // backgroundColor: 'red',
+                }}
+              />
+            </View>
           </View>
           <View>
             <CommonText
@@ -77,8 +98,18 @@ const HomeScreen = () => {
               externalStyle={{fontSize: 16}}
             />
           </View>
-
-          <CommonText />
+          <CommonButton
+            innerStyle={{
+              backgroundColor: Colors.CardColor,
+              borderColor: '#91D4F2',
+              borderWidth: 1,
+            }}
+            title="새로고침"
+            innerTextStyle={{
+              color: '#91D4F2',
+              fontSize: 19,
+            }}
+          />
         </View>
       </View>
 
@@ -91,6 +122,8 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   cardBody: {
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
 

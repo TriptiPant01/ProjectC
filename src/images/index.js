@@ -3,4 +3,5 @@ export default Images = {
   UniversityName: require('./uniName.png'),
   Logo: require('./Logo/Logo.png'),
   ConfirmBanner: require('./ConfirmBanner/ConfirmBanner.png'),
+  BarCodeIcon: require('./barcode.png'),
 };
