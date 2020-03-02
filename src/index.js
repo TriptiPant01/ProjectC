@@ -120,7 +120,7 @@ export default createAppContainer(
   createSwitchNavigator(
     {
       Login: LoginStack,
-      Home: AppStack,
+      // Home: AppStack,
     },
     {
       initialRouteName: 'Login',
