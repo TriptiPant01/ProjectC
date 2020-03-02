@@ -1,23 +1,23 @@
-import TextInput from './TextInput';
-import Header from './Header';
-import TextInputLeftIcon from './TextInputLeftIcon';
+// import TextInput from './TextInput';
+// import Header from './Header';
+// import TextInputLeftIcon from './TextInputLeftIcon';
 import CommonButton from './FooterBotton';
-import CommonStyles from './CommonStyles';
-import MiddleText from './CenterText';
+// import CommonStyles from './CommonStyles';
+// import MiddleText from './CenterText';
 import Divider from './Divider';
-import HomeInnerContainer from './HomeInnerContainer';
-import CommentBox from './HomeCommentBox';
-import commonText from './CommonText';
+// import HomeInnerContainer from './HomeInnerContainer';
+// import CommentBox from './HomeCommentBox';
+import CommonText from './CommonText';
 
 export {
-  CommentBox,
-  HomeInnerContainer,
+  //   CommentBox,
+  //   HomeInnerContainer,
   Divider,
-  TextInput,
-  Header,
-  TextInputLeftIcon,
+  //   TextInput,
+  //   Header,
+  //   TextInputLeftIcon,
   CommonButton,
-  CommonStyles,
-  MiddleText,
-  commonText,
+  //   CommonStyles,
+  //   MiddleText,
+  CommonText,
 };
