@@ -63,6 +63,7 @@ const TemperatureContainer = ({ numInfo, temp, comment, icon }) => {
             marginRight: 10,
             height: 30,
             backgroundColor: '#88BFDE',
+
           }}
         />
         <CommonButton

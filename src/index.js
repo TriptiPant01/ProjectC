@@ -1,4 +1,4 @@
-import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen, HelpListScreen13, HelpDetailScreen14, EnterPhoneNumber3, EnterNameScreen9, VerificationCodeScreen5, SchoolSelectionScreen11, CompletionScreen12, Diagnosis, UserProfileScreen24, LocationScreen23, RealTimeNews21, RealTimeNewsDetail } from './screens';
+import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen, MapsScreen, HelpListScreen13, HelpDetailScreen14, EnterPhoneNumber3, EnterNameScreen9, VerificationCodeScreen5, SchoolSelectionScreen11, CompletionScreen12, Diagnosis, UserProfileScreen24, LocationScreen23, RealTimeNews21, RealTimeNewsDetail } from './screens';
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -40,7 +40,7 @@ const DiagnosisStack = createMaterialTopTabNavigator({
   진단법: {
     screen: Diagnosis,
   },
-  코로나맵: LocationScreen23,
+  코로나맵: MapsScreen,
   실시간뉴스: RealTimeNews21,
   진료소: LocationScreen23
 

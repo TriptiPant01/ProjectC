@@ -6,9 +6,9 @@ import { CommonText, TemperatureContainer } from '../commons';
 import { HeaderTitle } from 'react-navigation-stack';
 
 const Content = [
-  { id: 1, number: '01', temp: '37.5', comment: 'test', icon: Images.HumanIcon },
-  { id: 2, number: '02', temp: '32.5', comment: 'test', icon: Images.HumanIcon },
-  { id: 3, number: '03', temp: '37.5', comment: 'test', icon: Images.HumanIcon },
+  { id: 1, number: '01', temp: '37.5', comment: '발열 증상이 있다', icon: Images.HumanIcon },
+  { id: 2, number: '02', temp: '32.5', comment: '기침이나 인후통', icon: Images.HumanIcon },
+  { id: 3, number: '03', temp: '37.5', comment: '증상이 있다', icon: Images.HumanIcon },
 ];
 const Diagnosis = () => {
   return (
