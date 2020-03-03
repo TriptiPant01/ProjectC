@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text, ScrollView, TextInput} from 'react-native';
-
-import {Divider} from '../commons';
+import { View, Text, ScrollView, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Divider } from '../commons';
 
 const data = [
   {
@@ -41,7 +41,7 @@ const data = [
   },
 ];
 
-const Locationcontainer = ({title, location, type, phone}) => {
+const Locationcontainer = ({ title, location, type, phone }) => {
   return (
     <View>
       <View
@@ -50,16 +50,22 @@ const Locationcontainer = ({title, location, type, phone}) => {
           justifyContent: 'space-between',
           paddingVertical: 10,
         }}>
-        <View style={{width: 30, backgroundColor: 'red'}}>
-          <Text>Icon</Text>
+        <View style={{ width: 30 }}>
+          <Icon
+            name="place"
+            size={24}
+            color="grey"
+            style={{ marginRight: 5 }}
+
+          />
         </View>
         <View>
-          <Text style={{fontSize: 17, color: '#000000'}}>{title}</Text>
-          <Text style={{fontSize: 14, color: '#999A9B'}}>{location}</Text>
+          <Text style={{ fontSize: 17, color: '#000000' }}>{title}</Text>
+          <Text style={{ fontSize: 14, color: '#999A9B' }}>{location}</Text>
         </View>
-        <View style={{alignItems: 'flex-end', flex: 2}}>
-          <Text style={{fontSize: 13, color: '#636465'}}>{type}</Text>
-          <Text style={{fontSize: 14, color: '#43BBF0'}}>{phone}</Text>
+        <View style={{ alignItems: 'flex-end', flex: 2 }}>
+          <Text style={{ fontSize: 13, color: '#636465' }}>{type}</Text>
+          <Text style={{ fontSize: 14, color: '#43BBF0' }}>{phone}</Text>
         </View>
       </View>
       <Divider />
@@ -85,7 +91,7 @@ const LocationScreen = () => {
           borderRadius: 5,
         }}
       />
-      <View style={{marginTop: 20}}>
+      <View style={{ marginTop: 20 }}>
         {data.map(i => (
           <Locationcontainer
             title={i.title}

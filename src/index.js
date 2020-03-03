@@ -1,10 +1,10 @@
-import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen, EnterPhoneNumber3, EnterNameScreen9, VerificationCodeScreen5, SchoolSelectionScreen11, CompletionScreen12 } from './screens';
+import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen, HelpListScreen13, HelpDetailScreen14, EnterPhoneNumber3, EnterNameScreen9, VerificationCodeScreen5, SchoolSelectionScreen11, CompletionScreen12, Diagnosis, UserProfileScreen24, LocationScreen23, RealTimeNews21, RealTimeNewsDetail } from './screens';
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import { createBottomTabNavigator } from 'react-navigation-tabs'
+import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-tabs'
 import Images from './images'
 
 
@@ -15,11 +15,10 @@ const LoginStack = createStackNavigator({
   VerificationCodeScreen5: VerificationCodeScreen5,
   EnterNameScreen9: EnterNameScreen9,
   SchoolSelectionScreen11: SchoolSelectionScreen11,
-  CompletionScreen12: CompletionScreen12
-
-
-
-
+  CompletionScreen12: CompletionScreen12,
+  HelpListScreen13: HelpListScreen13,
+  HelpDetailScreen14: HelpDetailScreen14,
+  RealNewsDetail: RealTimeNewsDetail
 }, {
 
   headerMode: 'none',
@@ -37,20 +36,56 @@ const HomeStack = createStackNavigator({
 
 })
 
+const DiagnosisStack = createMaterialTopTabNavigator({
+  진단법: {
+    screen: Diagnosis,
+  },
+  코로나맵: LocationScreen23,
+  실시간뉴스: RealTimeNews21,
+  진료소: LocationScreen23
+
+
+},
+
+  {
+
+    tabBarOptions: {
+      style: {
+        // paddingTop: 50,
+        backgroundColor: '#FFFFFF',
+
+
+
+      },
+      indicatorStyle: {
+        backgroundColor: '#43BBF0'
+      },
+      activeTintColor: '#43BBF0',
+      inactiveTintColor: '#B2B2B2'
+    },
+  })
 
 const HealthInfoStack = createStackNavigator({
-  HealthInfo: HealthInfoScreen,
+  코로나정보: DiagnosisStack,
+
+
+
 },
   {
-    headerMode: 'none',
-    initialRouteName: 'HealthInfo'
+    // headerMode: 'sdkjdhjh',
+    initialRouteName: '코로나정보',
+    // /
+    navigationOptions: {
+      headerTintColor: '#fff',
+    }
+
   })
 const UserInfoStack = createStackNavigator({
-  UserInfo: UserInfoScreen,
+  UserProfileScreen24: UserProfileScreen24,
 },
   {
     headerMode: 'none',
-    initialRouteName: 'UserInfo'
+    initialRouteName: 'UserProfileScreen24'
   })
 
 
@@ -86,6 +121,8 @@ HomeStack.navigationOptions = ({ navigation }) => {
     tabBarVisible,
   };
 };
+
+
 
 const AppStack = createBottomTabNavigator({
   '홈': HomeStack,
@@ -136,7 +173,7 @@ export default createAppContainer(
       Home: AppStack,
     },
     {
-      initialRouteName: 'Login',
+      initialRouteName: 'Home',
     }
   )
 );

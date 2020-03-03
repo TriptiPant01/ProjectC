@@ -4,7 +4,7 @@ import { Input } from 'react-native-elements';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import Colors from '../colors'
 
-const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, title, handleOnPress, disabled, changeText, value, onSubmit, navigation, navigationFooter ,clearButtonMode}) => {
+const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, title, handleOnPress, disabled, changeText, value, onSubmit, navigation, navigationFooter, clearButtonMode }) => {
     return (
         <View style={styles.InputFieldwrapper}>
 
@@ -25,7 +25,7 @@ const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, titl
 
                 />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigationFooter && navigation.navigate('HelpSignInSignUp15')}>
+            <TouchableOpacity onPress={() => navigationFooter && navigation.navigate('HelpListScreen13')}>
                 <Text style={styles.footerTextStyle}>{footerText || ''}</Text>
             </TouchableOpacity>
         </View>

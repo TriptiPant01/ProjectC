@@ -9,7 +9,7 @@ const { width } = Dimensions.get('screen')
 const HelpDetailScreen14 = ({ navigation }) => {
     return (
         <View style={CommonStyles.wrapper}>
-            <Header headerText='질문 1' navigation={navigation} />
+            <Header headerText='로그인이 되지 않아요.' navigation={navigation} />
             <View style={styles.innerContainer}>
                 <View style={{ flex: 3 }}>
                     <Text style={{ fontSize: 16, color: '#707070' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Text>
@@ -19,8 +19,8 @@ const HelpDetailScreen14 = ({ navigation }) => {
                     <Text style={{ fontSize: 17, color: '#021F2C', marginBottom: 10 }}>오전 10시 - 오후 8시</Text>
                 </View>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-around', }}>
-                    <CommonButton title='02-392-0700' innerStyle={{ backgroundColor: Colors.appColor, borderColor: Colors.activeButton, borderWidth: 2, width: width / 2.4 }} innerTextStyle={{ color: Colors.activeButton }} />
-                    <CommonButton title='카카오 상담톡' innerStyle={{ backgroundColor: Colors.YellowColor, width: width / 2.4 }} innerTextStyle={{ color: '#021F2C' }} />
+                    <CommonButton title='02-392-0700' innerStyle={{ backgroundColor: Colors.appColor, borderColor: '#43BBF0', borderWidth: 2, width: width / 2.4 }} innerTextStyle={{ color: '#43BBF0' }} />
+                    <CommonButton title='카카오 상담톡' innerStyle={{ backgroundColor: '#FFDF00', width: width / 2.4 }} innerTextStyle={{ color: '#021F2C' }} />
                 </View>
 
             </View>

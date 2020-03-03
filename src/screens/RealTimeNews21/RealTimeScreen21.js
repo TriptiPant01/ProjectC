@@ -9,9 +9,9 @@ import {
   Dimensions,
 } from 'react-native';
 
-import Images from '../../Images';
+import Images from '../../images';
 
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 const data = [
   {
     id: 1,
@@ -42,16 +42,21 @@ const RealTimeContainer = ({
   logoFirst,
   logoSecond,
   newsIcon,
+  click
+
 }) => {
   return (
     <TouchableOpacity
+      onPress={click}
       style={{
         padding: 10,
         backgroundColor: 'white',
         marginHorizontal: 15,
         marginVertical: 10,
-      }}>
-      <View style={{flexDirection: 'row', marginVertical: 8}}>
+      }}
+
+    >
+      <View style={{ flexDirection: 'row', marginVertical: 8 }}>
         <Image
           source={logoIcon}
           resizeMode="contain"
@@ -63,15 +68,15 @@ const RealTimeContainer = ({
           }}
         />
         <View>
-          <Text style={{fontSize: 11, color: '#757575'}}> {logoFirst}</Text>
-          <Text style={{fontSize: 11, color: '#757575'}}>{logoSecond}</Text>
+          <Text style={{ fontSize: 11, color: '#757575' }}> {logoFirst}</Text>
+          <Text style={{ fontSize: 11, color: '#757575' }}>{logoSecond}</Text>
         </View>
       </View>
-      <View style={{flexDirection: 'row'}}>
-        <Image source={newsIcon} style={{paddingRight: 10}} />
-        <View style={{flex: 1, paddingLeft: 15}}>
-          <Text style={{fontSize: 15, color: '#212121'}}>{title}</Text>
-          <Text style={{fontSize: 13, color: '#757575', marginTop: 10}}>
+      <View style={{ flexDirection: 'row' }}>
+        <Image source={newsIcon} style={{ paddingRight: 10 }} />
+        <View style={{ flex: 1, paddingLeft: 15 }}>
+          <Text style={{ fontSize: 15, color: '#212121' }}>{title}</Text>
+          <Text style={{ fontSize: 13, color: '#757575', marginTop: 10 }}>
             {desc}
           </Text>
         </View>
@@ -79,12 +84,12 @@ const RealTimeContainer = ({
     </TouchableOpacity>
   );
 };
-const RealtimeScreen = () => {
+const RealtimeScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.wrapper}>
       <Image
         source={Images.News1}
-        style={{width: '100%', height: height / 3.1}}
+        style={{ width: '100%', height: height / 3.1 }}
       />
       <View
         style={{
@@ -101,9 +106,10 @@ const RealtimeScreen = () => {
           logoIcon={Images.NewsLogo1}
           logoFirst="매일 경제"
           logoSecond="3분 전"
+          click={() => navigation.navigate('RealNewsDetail')}
         />
       </View>
-      <View style={{marginTop: height / 3.6}}>
+      <View style={{ marginTop: height / 3.6 }}>
         {data.map(i => (
           <RealTimeContainer
             title={i.title}

@@ -23,6 +23,7 @@ const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
                     footerText='로그인 / 가입을 도와드릴까요?'
                     title='전화번호'
                     placeholderText={'0000-0000'}
+                    navigationFooter={() => navigation.navigate('HelpListScreen13')}
                     // customStyle={styles.Textholder}
                     leftIconDispay={<TextInputLeftIcon />
 
@@ -43,10 +44,10 @@ const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
 
             </ScrollView>
             <View style={styles.buttonStyle}>
-                <CommonButton title='다음' onPress={() => navigation.navigate('VerificationCodeScreen5')} 
-                innerStyle={inputState === true && input.length > 0 ?
-                    { backgroundColor: Colors.activeButton } :
-                    { backgroundColor: Colors.InactiveButton }}
+                <CommonButton title='다음' onPress={() => navigation.navigate('VerificationCodeScreen5')}
+                    innerStyle={inputState === true && input.length > 0 ?
+                        { backgroundColor: Colors.activeButton } :
+                        { backgroundColor: Colors.InactiveButton }}
                     disabled={inputState === false && input.length <= 4}
                 />
             </View>
@@ -64,8 +65,8 @@ const styles = StyleSheet.create({
         alignContent: 'flex-start',
 
     },
-    buttonStyle:{
-        margin:20
+    buttonStyle: {
+        margin: 20
     }
 })
 

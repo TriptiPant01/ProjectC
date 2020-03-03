@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 
-import Images from '../Images';
+import Images from '../images';
 
 import { CommonButton } from '../commons';
 
