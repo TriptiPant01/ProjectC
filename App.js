@@ -32,7 +32,6 @@ const App: () => React$Node = () => {
       <StatusBar backgroundColor="white" barStyle='dark-content' />
       <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
         <MainNavaigator />
-    
       </SafeAreaView>
     </View>
   );

@@ -46,9 +46,9 @@ const VerificationCodeScreen5 = ({ headerTitle, navigation }) => {
                         </View>
 
                         <View style={styles.bottomTextWrap}>
-                        <Text style={styles.bottomText}>재전송</Text>
-                        <Text style={styles.bottomText}>2분 59초</Text>
-                          
+                            <Text style={styles.bottomText}>재전송</Text>
+                            <Text style={styles.bottomText}>2분 59초</Text>
+                            
                         
                         </View>
 

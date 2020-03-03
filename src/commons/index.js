@@ -8,16 +8,18 @@ import Divider from './Divider';
 import HomeInnerContainer from './HomeInnerContainer';
 import CommentBox from './HomeCommentBox';
 import CommonText from './CommonText';
+import TemperatureContainer from './TemperatureContainer';
 
 export {
     CommentBox,
     HomeInnerContainer,
-  Divider,
+   Divider,
     TextInput,
     Header,
     TextInputLeftIcon,
-  CommonButton,
+   CommonButton,
     CommonStyles,
     MiddleText,
   CommonText,
+  TemperatureContainer,
 };
