@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* AntiCoronaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AntiCoronaTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -62,6 +60,25 @@
 		BA00FE1B6989024C9912C14C /* Pods-AntiCoronaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiCoronaTests.release.xcconfig"; path = "Target Support Files/Pods-AntiCoronaTests/Pods-AntiCoronaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBAB968097BCDDF27ADB66C8 /* libPods-AntiCorona.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntiCorona.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA2B603AE0D11BBC0B770A4 /* Pods-AntiCorona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntiCorona.debug.xcconfig"; path = "Target Support Files/Pods-AntiCorona/Pods-AntiCorona.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFD5657240E40D10079383F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		BFFD5658240E40D10079383F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		BFFD5659240E40D10079383F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		BFFD565A240E40D10079383F /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		BFFD565B240E40D10079383F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		BFFD565C240E40D10079383F /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		BFFD565D240E40D10079383F /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		BFFD565E240E40D10079383F /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		BFFD565F240E40D10079383F /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		BFFD5660240E40D10079383F /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		BFFD5661240E40D10079383F /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		BFFD5662240E40D10079383F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		BFFD5663240E40D10079383F /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		BFFD5664240E40D10079383F /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		BFFD5665240E40D10079383F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		BFFD5666240E40D10079383F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		BFFD5677240E418F0079383F /* AntiCorona.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AntiCorona.xcodeproj; sourceTree = "<group>"; };
+		BFFD567C240E43A20079383F /* AntiCorona.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AntiCorona.xcscheme; sourceTree = "<group>"; };
+		BFFD567D240E43A20079383F /* AntiCorona-tvOS.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "AntiCorona-tvOS.xcscheme"; sourceTree = "<group>"; };
 		C78864A53BD11653C9C65A1A /* libPods-AntiCorona-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntiCorona-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEC16071AEE0BF0D62A40CF /* libPods-AntiCorona-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AntiCorona-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -139,6 +156,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFFD567A240E43A20079383F /* xcshareddata */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				BBAB968097BCDDF27ADB66C8 /* libPods-AntiCorona.a */,
@@ -152,6 +170,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BFFD5677240E418F0079383F /* AntiCorona.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -159,6 +178,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BFFD5656240E40D00079383F /* Fonts */,
 				13B07FAE1A68108700A75B9A /* AntiCorona */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AntiCoronaTests */,
@@ -194,8 +214,54 @@
 				F98DBE0230CBA5ECAB934BB0 /* Pods-AntiCoronaTests.debug.xcconfig */,
 				BA00FE1B6989024C9912C14C /* Pods-AntiCoronaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFFD5656240E40D00079383F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD5657240E40D10079383F /* Fontisto.ttf */,
+				BFFD5658240E40D10079383F /* Octicons.ttf */,
+				BFFD5659240E40D10079383F /* Feather.ttf */,
+				BFFD565A240E40D10079383F /* Entypo.ttf */,
+				BFFD565B240E40D10079383F /* FontAwesome5_Brands.ttf */,
+				BFFD565C240E40D10079383F /* MaterialCommunityIcons.ttf */,
+				BFFD565D240E40D10079383F /* AntDesign.ttf */,
+				BFFD565E240E40D10079383F /* Foundation.ttf */,
+				BFFD565F240E40D10079383F /* Ionicons.ttf */,
+				BFFD5660240E40D10079383F /* FontAwesome5_Solid.ttf */,
+				BFFD5661240E40D10079383F /* FontAwesome5_Regular.ttf */,
+				BFFD5662240E40D10079383F /* FontAwesome.ttf */,
+				BFFD5663240E40D10079383F /* Zocial.ttf */,
+				BFFD5664240E40D10079383F /* EvilIcons.ttf */,
+				BFFD5665240E40D10079383F /* SimpleLineIcons.ttf */,
+				BFFD5666240E40D10079383F /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		BFFD5678240E418F0079383F /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFFD567A240E43A20079383F /* xcshareddata */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD567B240E43A20079383F /* xcschemes */,
+			);
+			name = xcshareddata;
+			path = AntiCorona.xcodeproj/xcshareddata;
+			sourceTree = "<group>";
+		};
+		BFFD567B240E43A20079383F /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD567C240E43A20079383F /* AntiCorona.xcscheme */,
+				BFFD567D240E43A20079383F /* AntiCorona-tvOS.xcscheme */,
+			);
+			path = xcschemes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +375,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BFFD5678240E418F0079383F /* Products */;
+					ProjectRef = BFFD5677240E418F0079383F /* AntiCorona.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* AntiCorona */,
@@ -337,8 +410,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

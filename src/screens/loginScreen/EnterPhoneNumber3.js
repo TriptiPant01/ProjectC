@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 // import Icon from 'react-native-vector-icons/FontAwesome';
-import { Input } from 'react-native-elements';
+// import { Input } from 'react-native-elements';
 
-import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles } from '../commons'
+import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles } from '../../commons'
 import Images from '../../images'
 import Colors from '../../colors'
 
-handlePress = (navigation) => {
-    navigation.navigate('VerificationCode5')
-
-
-}
 
 const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
     const [input, setInput] = useState('');
@@ -28,7 +23,7 @@ const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
                     footerText='로그인 / 가입을 도와드릴까요?'
                     title='전화번호'
                     placeholderText={'0000-0000'}
-                    customStyle={styles.Textholder}
+                    // customStyle={styles.Textholder}
                     leftIconDispay={<TextInputLeftIcon />
 
                     }
@@ -47,8 +42,9 @@ const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
                 />
 
             </ScrollView>
-            <View style={CommonStyles.buttonStyle}>
-                <CommonButton title='다음' onPress={() => navigation.navigate('VerificationCode5')} innerStyle={inputState === true && input.length > 0 ?
+            <View style={styles.buttonStyle}>
+                <CommonButton title='다음' onPress={() => navigation.navigate('VerificationCodeScreen5')} 
+                innerStyle={inputState === true && input.length > 0 ?
                     { backgroundColor: Colors.activeButton } :
                     { backgroundColor: Colors.InactiveButton }}
                     disabled={inputState === false && input.length <= 4}
@@ -59,6 +55,7 @@ const EnterPhoneNumber3 = ({ headerTitle, navigation }) => {
         </View>
     )
 }
+export default EnterPhoneNumber3;
 
 const styles = StyleSheet.create({
     wrapper: {
@@ -66,7 +63,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignContent: 'flex-start',
 
+    },
+    buttonStyle:{
+        margin:20
     }
 })
 
-export default EnterPhoneNumber3;

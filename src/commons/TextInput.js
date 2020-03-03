@@ -4,7 +4,7 @@ import { Input } from 'react-native-elements';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import Colors from '../colors'
 
-const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, title, handleOnPress, disabled, changeText, value, onSubmit, navigation, navigationFooter }) => {
+const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, title, handleOnPress, disabled, changeText, value, onSubmit, navigation, navigationFooter ,clearButtonMode}) => {
     return (
         <View style={styles.InputFieldwrapper}>
 
@@ -21,6 +21,7 @@ const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, titl
                     onSubmitEditing={onSubmit}
                     keyboardType={numeric ? 'number-pad' : 'default'}
                     leftIconContainerStyle={{ marginLeft: 0 }}
+                    clearButtonMode={clearButtonMode}
 
                 />
             </TouchableOpacity>

@@ -3,14 +3,14 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
-import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles, MiddleText } from '../commons'
+import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles, MiddleText } from '../../commons'
 import Images from '../../images'
 import Colors from '../../colors'
 
-handlePress = (navigation) => {
-    navigation.navigate('BirthDate9')
+// handlePress = (navigation) => {
+//     navigation.navigate('BirthDate9')
 
-}
+// }
 
 const EnterNameScreen = ({ headerTitle, navigation }) => {
     const [input, setInput] = useState('');
@@ -25,7 +25,7 @@ const EnterNameScreen = ({ headerTitle, navigation }) => {
                 <TextInput
 
                     title='이름'
-                    placeholderText={'타이틀1'}
+                    placeholderText={'실명'}
                     customStyle={styles.Textholder}
                     changeText={(value) => {
                         setInput(value);
@@ -39,17 +39,18 @@ const EnterNameScreen = ({ headerTitle, navigation }) => {
                     }}
                     value={input}
                     handleOnPress={() => this.handlePress(navigation)}
+                    clearButtonMode='while-editing'
                 />
-
+                
             </ScrollView>
-            <View style={CommonStyles.buttonStyle}>
+            <View style={styles.buttonStyle}>
                 <CommonButton
                     title='다음'
                     onPress={() => this.handlePress(navigation)}
                     innerStyle={inputState === true && input.length > 0 ?
                         { backgroundColor: Colors.activeButton } :
                         { backgroundColor: Colors.InactiveButton }}
-                    onPress={() => navigation.navigate('BirthDate9')}
+                    onPress={() => navigation.navigate('SchoolSelectionScreen11')}
                     disabled={inputState === false && input.length <= 4}
 
                 />
@@ -70,7 +71,11 @@ const styles = StyleSheet.create({
         alignContent: 'flex-start',
 
         // backgroundColor: "red"
-    }
+    },
+    buttonStyle:{
+        margin:20
+    },
+  
 })
 
 export default EnterNameScreen;

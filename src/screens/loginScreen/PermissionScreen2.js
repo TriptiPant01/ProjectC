@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { ScrollView, FlatList, View, Text, Button, TouchableOpacity, StyleSheet, Image, Platform } from 'react-native';
-// import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles, MiddleText } from '../../commons'
 
 
 handlePress = (navigation) => {
-    navigation.navigate('Logo')
+    navigation.navigate('EnterPhoneNumber3')
 
 }
 
@@ -18,20 +18,20 @@ const PermissionScreen2 = ({ navigation }) => {
 
                     <View style={styles.firstBox}>
                         <Text style={styles.firstText}>편리한 이용을 위해 </Text>
-                        <Text style={styles.firstText}>권한허용이 꼭 필요합니다.</Text>
+                        <Text style={styles.firstText}> 권한허용이 꼭 필요합니다.</Text>
                     </View>
 
                     <View style={styles.midLine}></View>
 
                     <View style={styles.secondContent}>
                         <View style={styles.notificationBox}>
-                            {/* <Icon
+                            <Icon
                                 name="notifications"
                                 size={20}
                                 color="black"
                                 style={{ marginRight: 5 }}
 
-                            /> */}
+                            />
                             <Text style={styles.notificationtext}>알림 허용</Text>
                         </View>
 
@@ -41,13 +41,13 @@ const PermissionScreen2 = ({ navigation }) => {
 
                     <View style={styles.thirdContent}>
                         <View style={styles.locationBox}>
-                            {/* <Icon
+                            <Icon
                                 name="place"
                                 size={20}
                                 color="black"
                                 style={{ marginRight: 5 }}
 
-                            /> */}
+                            />
                             <Text style={styles.locationText}>위치정보 허용</Text>
                         </View>
 
@@ -57,8 +57,11 @@ const PermissionScreen2 = ({ navigation }) => {
                 </View>
 
 
-                <View style={CommonStyles.buttonStyle}>
-                    <CommonButton title='다음' onPress={() => handlePress(navigation)} />
+                <View style={styles.buttonStyle}>
+                    <CommonButton 
+                        title='네, 동의해요' 
+                        innerStyle={{backgroundColor:'#43BBF0'}}
+                        onPress={() => navigation.navigate('EnterPhoneNumber3')} />
                 </View>
 
             </View>
@@ -82,7 +85,7 @@ const styles = StyleSheet.create({
         width: '85%',
         backgroundColor: '#FFFFFF',
         height: Platform.OS === 'ios' ? '50%' : '70%',
-        borderRadius: 32
+        borderRadius: 8
 
     },
     contentWrapper: {
@@ -143,8 +146,9 @@ const styles = StyleSheet.create({
 
     },
     buttonStyle: {
-        position: 'absolute', bottom: 0,
-        flex: 1
+        
+        flex: 1,
+        width:'100%'
 
     }
 

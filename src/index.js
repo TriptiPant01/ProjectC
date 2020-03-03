@@ -1,4 +1,4 @@
-import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen } from './screens';
+import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen ,EnterPhoneNumber3,EnterNameScreen9,VerificationCodeScreen5,SchoolSelectionScreen11,CompletionScreen12} from './screens';
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -9,7 +9,15 @@ import Images from './images'
 
 
 const LoginStack = createStackNavigator({
-  LogoScreen1: LogoScreen1
+  LogoScreen1: LogoScreen1,
+  PermissionScreen2: PermissionScreen2,
+  EnterPhoneNumber3:EnterPhoneNumber3,
+  VerificationCodeScreen5:VerificationCodeScreen5,
+  EnterNameScreen9:EnterNameScreen9,
+  SchoolSelectionScreen11:SchoolSelectionScreen11,
+  CompletionScreen12:CompletionScreen12
+
+
 
 
 }, {

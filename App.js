@@ -28,12 +28,13 @@ import {
 import MainNavaigator from './src';
 const App: () => React$Node = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+    <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
+      <StatusBar backgroundColor="white" barStyle='dark-content' />
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
         <MainNavaigator />
+    
       </SafeAreaView>
-    </>
+    </View>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image,TouchableOpacity } from 'react-native'
 
 
 import { TextInput, TextInputLeftIcon } from '../../commons'
@@ -15,10 +15,18 @@ handlePress = (navigation) => {
 const LogoScreen1 = ({ navigation }) => {
     return (
         <View style={styles.umiWrapper}>
-            <View style={{ flex: 4, justifyContent: 'center', alignItems: 'center' }}>
+            <TouchableOpacity 
+                style={{ flex: 1, 
+                justifyContent: 'center',
+                alignItems: 'center' }}
+
+                onPress={()=>navigation.navigate('PermissionScreen2')}
+             >
                 <Image source={Images.Logo} style={styles.ImageContainer} />
+               
+            </TouchableOpacity>
             </View>
-        </View>
+          
     )
 }
 

@@ -26,16 +26,16 @@ const CompletionScreen12 = ({ navigation }) => {
                     style={{
                         fontSize: 30,
                         color: "#2A8CFF"
-                    }}>서비스가 완료되었어요.</Text>
+                    }}>가입이 완료됐어요.</Text>
                 <Text
                     style={{
                         fontSize: 14,
                         color: '#404040',
                         marginVertical: 10
-                    }}>대금은 3~4일(영업일)내로 입금됩니다.</Text>
+                    }}>우미로 편리하게 예약해보세요.</Text>
             </View>
-            <View style={{ marginHorizontal: 20 }}>
-                <CommonButton title='새로운 일자리 찾기' />
+            <View style={{ marginHorizontal: 20,marginVertical:20 }}>
+                <CommonButton title='둘러보기' innerStyle={{backgroundColor:'#43BBF0'}}/>
             </View>
         </View >
     )
