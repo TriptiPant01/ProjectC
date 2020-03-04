@@ -15,4 +15,6 @@ export default Images = {
   NewsLogo2: require('./logo2.png'),
   NewsDetail: require('./detailINewsImage.png'),
   bbcNewsIcon: require('./BBCnews.png'),
+  Bg1: require('./BG1.png'),
+  Bg2: require('./bg2.png'),
 };

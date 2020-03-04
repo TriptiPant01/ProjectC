@@ -52,6 +52,7 @@ const RealTimeContainer = ({
         marginVertical: 10,
       }}>
       <View style={{flexDirection: 'row', marginVertical: 8}}>
+        {/* {alert(height)} */}
         <Image
           source={logoIcon}
           resizeMode="contain"
