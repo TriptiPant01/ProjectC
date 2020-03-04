@@ -18,7 +18,8 @@ import {
   LocationScreen23,
   RealTimeNews21,
   RealTimeNewsDetail,
-  DrawerScreen
+  DrawerScreen,
+
 } from './screens';
 import React from 'react'
 import { View, Text, Image } from 'react-native'
