@@ -19,7 +19,7 @@ const HomeScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.wrapper}>
       <View style={styles.notificaitonIcon}>
-        {/* <Image source={Images.Notification} style={{ height: 30, width: 30 }} /> */}
+        <Image source={Images.Notification} style={{ height: 30, width: 30 }} />
       </View>
       <View style={styles.cardHolderWrapper}>
         <ImageBackground

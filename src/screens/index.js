@@ -6,6 +6,7 @@ import UserProfileScreen24 from './UserProfileScreen24'
 import LocationScreen23 from './LocationScreen23'
 import MapsScreen from './MapScreen'
 import DrawerScreen from './DrawerScreen'
+import NotificationScreen from './NotificationScreen'
 
 import {
     LogoScreen1,
@@ -43,5 +44,6 @@ export {
     RealTimeNewsDetail,
     HelpListScreen13,
     HelpDetailScreen14,
-    DrawerScreen
+    DrawerScreen,
+    NotificationScreen
 };

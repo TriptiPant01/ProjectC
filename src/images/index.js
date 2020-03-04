@@ -37,6 +37,5 @@ export default Images = {
   userIcon: require('./UserIcon/UserIcon.png'),
   CardTopHolder: require('./idCard.png'),
   Notification: require('./notification.png')
-
 };
 // >>>>>>> 7f55deb4d019a12a126af676595af4876dee7dab

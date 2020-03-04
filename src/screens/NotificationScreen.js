@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 
-import { Header, Divider, HomeInnerContainer, CommonStyles } from '../../commons'
+import { Header, Divider, HomeInnerContainer, CommonStyles } from '../commons'
 const NotificationScreen = ({ navigation }) => {
     return (
         <View style={[CommonStyles.wrapper]}>
