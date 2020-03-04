@@ -34,7 +34,8 @@ const DrawerScreen = ({ headerTitle, navigation }) => {
 
                 <QRCodeScanner
                     onRead={onSuccess}
-                    markerStyle={{ height: 300, width: 300 }}
+                    // markerStyle={{ height: 300, width: 300 }}
+                    cameraStyle={{ height: 100, width: 100 }}
 
 
 
