@@ -2,7 +2,7 @@ import React from 'react'
 import { View, TouchableOpacity, Image, Text, Dimensions } from 'react-native'
 import { CommonButton, CommonStyles } from '../../commons'
 
-import Images from '../../images'
+import Images from '../../Images'
 const { width, height } = Dimensions.get('screen')
 
 const CompletionScreen12 = ({ navigation }) => {
@@ -34,8 +34,8 @@ const CompletionScreen12 = ({ navigation }) => {
                         marginVertical: 10
                     }}>우미로 편리하게 예약해보세요.</Text>
             </View>
-            <View style={{ marginHorizontal: 20,marginVertical:20 }}>
-                <CommonButton title='둘러보기' innerStyle={{backgroundColor:'#43BBF0'}}/>
+            <View style={{ marginHorizontal: 20, marginVertical: 20 }}>
+                <CommonButton title='둘러보기' innerStyle={{ backgroundColor: '#43BBF0' }} />
             </View>
         </View >
     )

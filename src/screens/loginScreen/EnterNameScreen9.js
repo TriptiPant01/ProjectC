@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
 import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles, MiddleText } from '../../commons'
-import Images from '../../images'
+import Images from '../../Images'
 import Colors from '../../colors'
 
 // handlePress = (navigation) => {
@@ -41,7 +41,7 @@ const EnterNameScreen = ({ headerTitle, navigation }) => {
                     handleOnPress={() => this.handlePress(navigation)}
                     clearButtonMode='while-editing'
                 />
-                
+
             </ScrollView>
             <View style={styles.buttonStyle}>
                 <CommonButton
@@ -72,10 +72,10 @@ const styles = StyleSheet.create({
 
         // backgroundColor: "red"
     },
-    buttonStyle:{
-        margin:20
+    buttonStyle: {
+        margin: 20
     },
-  
+
 })
 
 export default EnterNameScreen;

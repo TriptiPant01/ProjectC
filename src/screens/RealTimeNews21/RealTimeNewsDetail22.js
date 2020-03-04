@@ -9,7 +9,7 @@ import {
   Image,
 } from 'react-native';
 
-import Images from '../../images';
+import Images from '../../Images';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 const {height, width} = Dimensions.get('window');
 import {CommonText} from '../../commons';

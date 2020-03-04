@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import { Header, Avatar, Badge, Icon, withBadge } from 'react-native-elements';
 import Icons from 'react-native-vector-icons/Ionicons';
 
-import Images from '../images'
+import Images from '../Images'
 import Colors from '../colors'
 
 const MyCustomLeftComponent = ({ navigation }) => {

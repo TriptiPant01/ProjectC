@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
-import Images from '../images'
+import Images from '../Images'
 
 const LeftIcon = () => {
     return (

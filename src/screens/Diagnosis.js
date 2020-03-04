@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 
-import Images from '../images';
+import Images from '../Images';
 import { CommonText, TemperatureContainer } from '../commons';
 import { HeaderTitle } from 'react-navigation-stack';
 

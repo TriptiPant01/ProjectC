@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 // import { Input } from 'react-native-elements';
 
 import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles } from '../../commons'
-import Images from '../../images'
+import Images from '../../Images'
 import Colors from '../../colors'
 
 

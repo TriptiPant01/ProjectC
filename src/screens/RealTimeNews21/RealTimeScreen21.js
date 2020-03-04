@@ -9,7 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-import Images from '../../images';
+import Images from '../../Images';
 
 const { height, width } = Dimensions.get('window');
 const data = [

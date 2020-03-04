@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
 import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles, MiddleText } from '../../commons'
-import Images from '../../images'
+import Images from '../../Images'
 import Colors from '../../colors'
 
 // handlePress = (navigation) => {
@@ -45,7 +45,7 @@ const SchoolSelectionScreen11 = ({ headerTitle, navigation }) => {
                     <Text style={styles.firstText}>연세</Text>
                     <Text style={styles.secondText}>대학교(신촌)</Text>
                 </View>
-                  <View style={styles.textBox}>
+                <View style={styles.textBox}>
                     <Text style={styles.firstText}>연세</Text>
                     <Text style={styles.secondText}>대학교(신촌)</Text>
                 </View>
@@ -81,23 +81,23 @@ const styles = StyleSheet.create({
 
         // backgroundColor: "red"
     },
-    buttonStyle:{
-        margin:20
+    buttonStyle: {
+        margin: 20
     },
-      firstText:{
-        color:'#069BE5',
-        fontSize:17,
-        lineHeight:20
+    firstText: {
+        color: '#069BE5',
+        fontSize: 17,
+        lineHeight: 20
     },
-    textBox:{
-        flexDirection:'row',
-        marginVertical:10,
-        marginHorizontal:20
+    textBox: {
+        flexDirection: 'row',
+        marginVertical: 10,
+        marginHorizontal: 20
     },
-    secondText:{
-         color:'#000000',
-        fontSize:17,
-        lineHeight:20
+    secondText: {
+        color: '#000000',
+        fontSize: 17,
+        lineHeight: 20
 
     }
 })
