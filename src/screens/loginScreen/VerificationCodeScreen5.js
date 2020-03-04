@@ -36,8 +36,8 @@ const VerificationCodeScreen5 = ({ headerTitle, navigation }) => {
                                 codeLength={6}
                                 inputPosition='center'
                                 onFulfill={() => navigation.navigate('EnterNameScreen9')}
-                                activeColor="#4388F0"
-                                inactiveColor="#4388F0"
+                                activeColor="#43BBF0"
+                                inactiveColor="#43BBF0"
                                 keyboardType="numeric"
                                 codeInputStyle={{ color: 'black', fontSize: 40, lineHeight: 48 }}
                                 selectionColor='black'

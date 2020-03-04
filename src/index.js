@@ -3,7 +3,6 @@ import {
   LogoScreen1,
   PermissionScreen2,
   UserInfoScreen,
-
   HealthInfoScreen,
   MapsScreen,
   HelpListScreen13,
@@ -19,6 +18,8 @@ import {
   RealTimeNews21,
   RealTimeNewsDetail,
   DrawerScreen,
+  NotificationScreen,
+  drawercontent
 
 } from './screens';
 import React from 'react'
@@ -26,7 +27,8 @@ import { View, Text, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-tabs'
+import { createDrawerNavigator } from 'react-navigation-drawer'
+import { createBottomTabNavigator, createMaterialTopTabNavigator, } from 'react-navigation-tabs'
 import Images from './Images'
 
 
@@ -51,12 +53,66 @@ const LoginStack = createStackNavigator({
 
 const HomeStack = createStackNavigator({
   HomeScreen: HomeScreen,
-  DrawerScreen: DrawerScreen
+  // DrawerScreen: DrawerScreen,
+  NotificationScreen: NotificationScreen,
+  // DrawerStack: drawerStack
 
 }, {
   headerMode: 'none',
   initialRouteName: 'HomeScreen'
 
+})
+// const RouteConfigs = {
+//   DrawerScreen: DrawerScreen,
+//   HealthInfoScreen: HealthInfoScreen,
+//   UserInfoScreen: UserInfoScreen
+// };
+
+// const DrawerNavigatorConfig = {
+//   intialRouteName: 'Home',
+//   navigationOptions: {
+//     headerStyle: {
+//       backgroundColor: '#f4511e',
+//     },
+//     headerTintColor: '#fff',
+//     headerTitleStyle: {
+//       color: 'white',
+//     },
+//   },
+//   contentOptions: {
+
+//     activeTintColor: '#e91e63',
+//     itemsContainerStyle: {
+//       paddingTop: 100,
+
+//     },
+//     iconContainerStyle: {
+//       opacity: 1,
+
+//     },
+
+//   },
+//   drawerBackgroundColor: '#FFFFFF',
+//   drawerPosition: 'right',
+//   overlayColor: 1,
+
+
+
+
+
+// };
+
+// const drawerStack = createDrawerNavigator(RouteConfigs, DrawerNavigatorConfig)
+
+const drawerStack = createDrawerNavigator({
+  DrawerScreen: DrawerScreen,
+  HealthInfoScreen: HealthInfoScreen,
+  UserInfoScreen: UserInfoScreen
+
+}, {
+  drawerPosition: 'right',
+  overlayColor: 1,
+  contentComponent: drawercontent
 })
 
 const DiagnosisStack = createMaterialTopTabNavigator({
@@ -194,9 +250,10 @@ export default createAppContainer(
     {
       Login: LoginStack,
       Home: AppStack,
+      Drawer: drawerStack
     },
     {
-      initialRouteName: 'Home',
+      initialRouteName: 'Drawer',
     }
   )
 );

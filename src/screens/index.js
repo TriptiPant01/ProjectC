@@ -7,7 +7,7 @@ import LocationScreen23 from './LocationScreen23'
 import MapsScreen from './MapScreen'
 import DrawerScreen from './DrawerScreen'
 import NotificationScreen from './NotificationScreen'
-
+import drawercontent from './drawercontent'
 import {
     LogoScreen1,
     PermissionScreen2,
@@ -45,5 +45,6 @@ export {
     HelpListScreen13,
     HelpDetailScreen14,
     DrawerScreen,
-    NotificationScreen
+    NotificationScreen,
+    drawercontent
 };

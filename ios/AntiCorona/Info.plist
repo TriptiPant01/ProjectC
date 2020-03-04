@@ -64,5 +64,7 @@
 	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>to use the camera</string>
 </dict>
 </plist>

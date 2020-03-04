@@ -35,7 +35,10 @@ const CompletionScreen12 = ({ navigation }) => {
                     }}>우미로 편리하게 예약해보세요.</Text>
             </View>
             <View style={{ marginHorizontal: 20, marginVertical: 20 }}>
-                <CommonButton title='둘러보기' innerStyle={{ backgroundColor: '#43BBF0' }} />
+                <CommonButton
+                    title='둘러보기'
+                    innerStyle={{ backgroundColor: '#43BBF0' }}
+                    onPress={() => navigation.navigate('HomeScreen')} />
             </View>
         </View >
     )

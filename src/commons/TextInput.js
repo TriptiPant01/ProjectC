@@ -13,7 +13,7 @@ const InputField = ({ numeric, footerText, placeholderText, leftIconDispay, titl
                 <Input
                     placeholder={placeholderText}
                     leftIcon={leftIconDispay}
-                    inputContainerStyle={{ borderBottomColor: Colors.textBoxBorder, borderBottomWidth: 2, }}
+                    inputContainerStyle={{ borderBottomColor: Colors.textBoxBorder, borderBottomWidth: 2, borderBottomColor: Colors.borderBottom }}
                     inputStyle={{ fontSize: 28 }}
                     disabled={disabled}
                     onChangeText={changeText}
@@ -52,12 +52,14 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: Colors.loginHelpText,
         marginTop: 10,
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
+        opacity: 0.4
     },
     textStyle: {
         fontSize: 13,
         color: Colors.inputTitle,
-        paddingHorizontal: 4
+        paddingHorizontal: 4,
+        opacity: 0.4
 
     }
 })
