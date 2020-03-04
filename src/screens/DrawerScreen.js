@@ -34,8 +34,8 @@ const DrawerScreen = ({ headerTitle, navigation }) => {
 
                 <QRCodeScanner
                     onRead={onSuccess}
-                    // markerStyle={{ height: 300, width: 300 }}
-                    cameraStyle={{ height: 100, width: 100 }}
+                    // markerStyle={{ height: 200, width: 200, borderWidth: 1, borderColor: 'red' }}
+                    cameraStyle={{ height: 200, width: 200, alignSelf: 'center' }}
 
 
 
@@ -72,6 +72,8 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 5,
+        // justifyContent: 'center',
+        // alignItems: 'center'
         // backgroundColor: 'red'
     },
     headerText: {

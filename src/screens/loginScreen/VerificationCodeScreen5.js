@@ -19,7 +19,7 @@ const VerificationCodeScreen5 = ({ headerTitle, navigation }) => {
             <Header headerText='6자리 인증번호를 입력해주세요.' navigation={navigation} />
 
             <View style={styles.mainWrapper}>
-                <View style={{ flex: 1 }}>
+                <ScrollView style={{ flex: 1 }}>
                     <View style={styles.topTextWrapper}>
                         <MiddleText title='01055048441번으로 코드를 전송했어요.' />
                         <MiddleText title='수신된 코드를 입력하세요' />
@@ -55,7 +55,7 @@ const VerificationCodeScreen5 = ({ headerTitle, navigation }) => {
 
                     </View>
 
-                </View>
+                </ScrollView>
 
 
             </View>

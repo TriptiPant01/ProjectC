@@ -253,7 +253,7 @@ export default createAppContainer(
       Drawer: drawerStack
     },
     {
-      initialRouteName: 'Drawer',
+      initialRouteName: 'Login',
     }
   )
 );
