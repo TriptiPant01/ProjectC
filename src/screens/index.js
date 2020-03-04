@@ -8,6 +8,7 @@ import MapsScreen from './MapScreen';
 import DrawerScreen from './DrawerScreen';
 import NotificationScreen from './NotificationScreen';
 import HomeScreenSuccess from './HomeScreenSuccess';
+import drawercontent from './drawercontent';
 
 import {
   LogoScreen1,
@@ -45,4 +46,5 @@ export {
   DrawerScreen,
   NotificationScreen,
   HomeScreenSuccess,
+  drawercontent,
 };

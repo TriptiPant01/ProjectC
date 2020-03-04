@@ -26,10 +26,13 @@ const HomeScreen = ({navigation}) => {
       >
         <View style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
           <View style={styles.notificaitonIcon}>
-            <Image
-              source={Images.Notification}
-              style={{height: 30, width: 30}}
-            />
+            <TouchableOpacity
+              onPress={() => navigation.navigate('NotificationScreen')}>
+              <Image
+                source={Images.Notification}
+                style={{height: 30, width: 30}}
+              />
+            </TouchableOpacity>
           </View>
           <View style={styles.cardHolderWrapper}>
             <ImageBackground

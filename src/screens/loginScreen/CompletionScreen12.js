@@ -43,6 +43,7 @@ const CompletionScreen12 = ({navigation}) => {
         <CommonButton
           title="둘러보기"
           innerStyle={{backgroundColor: '#43BBF0'}}
+          onPress={() => navigation.navigate('HomeScreen')}
         />
       </View>
     </View>

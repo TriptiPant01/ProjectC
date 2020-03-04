@@ -19,6 +19,8 @@ import {
   RealTimeNewsDetail,
   DrawerScreen,
   HomeScreenSuccess,
+  NotificationScreen,
+  drawercontent,
 } from './screens';
 import React from 'react';
 import {View, Text, Image} from 'react-native';
@@ -30,6 +32,7 @@ import {
   createMaterialTopTabNavigator,
 } from 'react-navigation-tabs';
 import Images from './images';
+import {createDrawerNavigator} from 'react-navigation-drawer';
 
 const LoginStack = createStackNavigator(
   {
@@ -49,6 +52,95 @@ const LoginStack = createStackNavigator(
     initialRouteName: 'LogoScreen1',
   },
 );
+
+// const HomeStack = createStackNavigator({
+//   HomeScreen: HomeScreen,
+//   // DrawerScreen: DrawerScreen,
+//   NotificationScreen: NotificationScreen,
+//   // DrawerStack: drawerStack
+
+// }, {
+//   headerMode: 'none',
+//   initialRouteName: 'HomeScreen'
+
+// })
+// const RouteConfigs = {
+//   DrawerScreen: DrawerScreen,
+//   HealthInfoScreen: HealthInfoScreen,
+//   UserInfoScreen: UserInfoScreen
+// };
+
+// const DrawerNavigatorConfig = {
+//   intialRouteName: 'Home',
+//   navigationOptions: {
+//     headerStyle: {
+//       backgroundColor: '#f4511e',
+//     },
+//     headerTintColor: '#fff',
+//     headerTitleStyle: {
+//       color: 'white',
+//     },
+//   },
+//   contentOptions: {
+
+//     activeTintColor: '#e91e63',
+//     itemsContainerStyle: {
+//       paddingTop: 100,
+
+//     },
+//     iconContainerStyle: {
+//       opacity: 1,
+
+//     },
+
+//   },
+//   drawerBackgroundColor: '#FFFFFF',
+//   drawerPosition: 'right',
+//   overlayColor: 1,
+
+// };
+
+// const drawerStack = createDrawerNavigator(RouteConfigs, DrawerNavigatorConfig)
+
+const drawerStack = createDrawerNavigator(
+  {
+    DrawerScreen: DrawerScreen,
+    HealthInfoScreen: HealthInfoScreen,
+    UserInfoScreen: UserInfoScreen,
+  },
+  {
+    drawerPosition: 'right',
+    overlayColor: 1,
+    contentComponent: drawercontent,
+  },
+);
+
+// const DiagnosisStack = createMaterialTopTabNavigator({
+//   진단법: {
+//     screen: Diagnosis,
+//   },
+//   코로나맵: MapsScreen,
+//   실시간뉴스: RealTimeNews21,
+//   진료소: LocationScreen23
+// })
+// const LoginStack = createStackNavigator(
+//   {
+//     LogoScreen1: LogoScreen1,
+//     PermissionScreen2: PermissionScreen2,
+//     EnterPhoneNumber3: EnterPhoneNumber3,
+//     VerificationCodeScreen5: VerificationCodeScreen5,
+//     EnterNameScreen9: EnterNameScreen9,
+//     SchoolSelectionScreen11: SchoolSelectionScreen11,
+//     CompletionScreen12: CompletionScreen12,
+//     HelpListScreen13: HelpListScreen13,
+//     HelpDetailScreen14: HelpDetailScreen14,
+//     RealNewsDetail: RealTimeNewsDetail,
+//   },
+//   {
+//     headerMode: 'none',
+//     initialRouteName: 'LogoScreen1',
+//   },
+// );
 
 const HomeStack = createStackNavigator(
   {
@@ -222,6 +314,7 @@ export default createAppContainer(
     {
       Login: LoginStack,
       Home: AppStack,
+      Drawer: drawerStack,
     },
     {
       initialRouteName: 'Home',
