@@ -11,7 +11,15 @@ const DrawerScreen = ({ headerTitle, navigation }) => {
 
     return (
         <View style={styles.wrapper}>
-            <Header headerText='전화번호로 간편하게 시작해요.' navigation={navigation} />
+            <View style={styles.header}>
+
+                <Text>dskjhfsdfhd</Text>
+                <Text>dskjhfsdfhd</Text>
+            </View>
+            <View style={styles.content}>
+
+            </View>
+
 
         </View>
     )
@@ -27,6 +35,19 @@ const styles = StyleSheet.create({
     },
     buttonStyle: {
         margin: 20
+    },
+    header: {
+        flex: 1,
+        backgroundColor: 'yellow',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginHorizontal: 20
+
+    },
+    content: {
+        flex: 5,
+        backgroundColor: 'red'
     }
 })
 

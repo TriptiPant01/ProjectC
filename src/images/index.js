@@ -30,11 +30,13 @@ export default Images = {
   NewsLogo2: require('./logo2.png'),
   NewsDetail: require('./detailINewsImage.png'),
   bbcNewsIcon: require('./BBCnews.png'),
+  // notification: require('./notification/notification.png'),
   Logo: require('./Logo/Logo.png'),
-     HomeIcon: require('./HomeIcon/HomeIcon2x.png'),
-     ReserveIcon: require('./ReserveIcon/ReserveIcon.png'),
-     userIcon: require('./UserIcon/UserIcon.png'),
-     CardTopHolder: require('./idCard.png'),
+  HomeIcon: require('./HomeIcon/HomeIcon2x.png'),
+  ReserveIcon: require('./ReserveIcon/ReserveIcon.png'),
+  userIcon: require('./UserIcon/UserIcon.png'),
+  CardTopHolder: require('./idCard.png'),
+  Notification: require('./notification.png')
 
 };
 // >>>>>>> 7f55deb4d019a12a126af676595af4876dee7dab

@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { CommonText, CommonButton, Divider } from '../commons';
 
-import Images from '../images';
+import Images from '../Images';
 import Colors from '../colors';
 
 const { height, width } = Dimensions.get('window');
@@ -19,11 +19,11 @@ const HomeScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.wrapper}>
       <View style={styles.notificaitonIcon}>
-        <Image source={Images.CardTopHolder} style={{ height: 30, width: 30 }} />
+        <Image source={Images.Notification} style={{ height: 30, width: 30 }} />
       </View>
       <View style={styles.cardHolderWrapper}>
         <ImageBackground
-          source={require('../images/idCard.png')}
+          source={require('../Images/idCard.png')}
           style={styles.imageContainer}>
           <View
             style={{

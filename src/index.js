@@ -1,11 +1,32 @@
-import { HomeScreen, LogoScreen1, PermissionScreen2, UserInfoScreen, HealthInfoScreen, MapsScreen, HelpListScreen13, HelpDetailScreen14, EnterPhoneNumber3, EnterNameScreen9, VerificationCodeScreen5, SchoolSelectionScreen11, CompletionScreen12, Diagnosis, UserProfileScreen24, LocationScreen23, RealTimeNews21, RealTimeNewsDetail } from './screens';
+import {
+  HomeScreen,
+  LogoScreen1,
+  PermissionScreen2,
+  UserInfoScreen,
+
+  HealthInfoScreen,
+  MapsScreen,
+  HelpListScreen13,
+  HelpDetailScreen14,
+  EnterPhoneNumber3,
+  EnterNameScreen9,
+  VerificationCodeScreen5,
+  SchoolSelectionScreen11,
+  CompletionScreen12,
+  Diagnosis,
+  UserProfileScreen24,
+  LocationScreen23,
+  RealTimeNews21,
+  RealTimeNewsDetail,
+  DrawerScreen
+} from './screens';
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator, createMaterialTopTabNavigator } from 'react-navigation-tabs'
-import Images from './images'
+import Images from './Images'
 
 
 const LoginStack = createStackNavigator({
@@ -28,7 +49,8 @@ const LoginStack = createStackNavigator({
 
 
 const HomeStack = createStackNavigator({
-  HomeScreen: HomeScreen
+  HomeScreen: HomeScreen,
+  DrawerScreen: DrawerScreen
 
 }, {
   headerMode: 'none',
