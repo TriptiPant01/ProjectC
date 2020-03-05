@@ -9,17 +9,17 @@ import {
   Image,
 } from 'react-native';
 
-import Images from '../../Images';
+import Images from '../../images';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 const {height, width} = Dimensions.get('window');
 import {CommonText} from '../../commons';
-import { RealTimeNewsDetail } from '.';
-import { HeaderTitle } from 'react-navigation-stack';
+import {RealTimeNewsDetail} from '.';
+import {HeaderTitle} from 'react-navigation-stack';
 const RealtimenewsDetail = ({navigation}) => {
-  console.log(height)
+  console.log(height);
   return (
-    <ScrollView style={styles .wrapper}>
-     <ImageBackground
+    <ScrollView style={styles.wrapper}>
+      <ImageBackground
         source={Images.NewsDetail}
         style={{width: '100%', height: height / 2.3}}
         resizeMode="stretch">
@@ -30,33 +30,23 @@ const RealtimenewsDetail = ({navigation}) => {
               flexDirection: 'row',
               justifyContent: 'space-between',
             }}>
-                         <Icon
-                                name="arrow-back"
-                                size={24}
-                                color="#FFFFFF"
-                                style={{ marginRight: 5 }}
-                                onPress={()=>navigation.navigate('실시간뉴스')}
-
-                            />
-                            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-                            <Icon
-                                name="share"
-                                size={24}
-                                color="#FFFFFF"
-                                
-
-                            />
-                              <Icon
-                                name="bookmark-border"
-                                size={24}
-                                color="#FFFFFF"
-                               style={{marginLeft:20}}
-
-                            />
-
-                            </View>
-           
-            
+            <Icon
+              name="arrow-back"
+              size={24}
+              color="#FFFFFF"
+              style={{marginRight: 5}}
+              onPress={() => navigation.navigate('실시간뉴스')}
+            />
+            <View
+              style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+              <Icon name="share" size={24} color="#FFFFFF" />
+              <Icon
+                name="bookmark-border"
+                size={24}
+                color="#FFFFFF"
+                style={{marginLeft: 20}}
+              />
+            </View>
           </View>
           <View style={{flexDirection: 'row', flex: 1}}>
             <Image

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 
-import Images from '../Images';
+import Images from '../images';
 
 import { CommonButton } from '../commons';
 
@@ -58,16 +58,15 @@ const TemperatureContainer = ({ numInfo, temp, comment, icon }) => {
           paddingBottom: 20,
         }}>
         <CommonButton
-          title="testsd"
+          title="예"
           innerStyle={{
             marginRight: 10,
             height: 30,
             backgroundColor: '#88BFDE',
-
           }}
         />
         <CommonButton
-          title="testsd"
+          title="아니오"
           innerStyle={{
             marginLeft: 10,
             height: 30,

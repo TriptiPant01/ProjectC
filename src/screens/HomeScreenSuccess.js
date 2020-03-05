@@ -16,23 +16,20 @@ import Images from '../images';
 import Colors from '../Colors';
 
 const {height, width} = Dimensions.get('window');
-const HomeScreen = ({navigation}) => {
+const HomeScreenSuccess = () => {
   return (
-    <ScrollView contentContainerStyle={[styles.wrapper]}>
+    <ScrollView contentContainerStyle={styles.wrapper}>
       <ImageBackground
-        source={Images.Bg1}
-        style={{width: '100%', height: '98%'}}
+        source={Images.Bg2}
+        style={{width: '100%', height: '100%'}}
         // style={styles.imageContainer}
       >
         <View style={{justifyContent: 'center', alignItems: 'center', flex: 1}}>
           <View style={styles.notificaitonIcon}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('NotificationScreen')}>
-              <Image
-                source={Images.Notification}
-                style={{height: 30, width: 30}}
-              />
-            </TouchableOpacity>
+            <Image
+              source={Images.Notification}
+              style={{height: 30, width: 30}}
+            />
           </View>
           <View style={styles.cardHolderWrapper}>
             <ImageBackground
@@ -113,33 +110,26 @@ const HomeScreen = ({navigation}) => {
                   />
                 </View>
               </View>
-              <View>
+              <Image
+                source={Images.CorrectIcon}
+                style={{alignSelf: 'center'}}
+              />
+              <View style={{paddingBottom: 20}}>
                 <CommonText
-                  textInput="안전인증이 필요해요."
-                  externalStyle={{fontSize: 30}}
+                  textInput="측정시간: 2020년 2월 7일 13시 42분"
+                  externalStyle={{fontSize: 11}}
                 />
                 <CommonText
-                  textInput="안전인증 장소 안내"
-                  externalStyle={{fontSize: 16}}
+                  textInput="측정장소: 연세대학교 신촌캠 중앙도서관 "
+                  externalStyle={{fontSize: 11}}
+                />
+                <CommonText
+                  textInput="측정담당자: 윤정탁"
+                  externalStyle={{fontSize: 11}}
                 />
               </View>
-              <CommonButton
-                innerStyle={{
-                  backgroundColor: Colors.CardColor,
-                  borderColor: '#91D4F2',
-                  borderWidth: 1,
-                }}
-                title="새로고침"
-                innerTextStyle={{
-                  color: '#91D4F2',
-                  fontSize: 19,
-                }}
-                onPress={() => navigation.navigate('HomeScreenSuccess')}
-              />
             </View>
-            <TouchableOpacity
-              style={styles.footerSlider}
-              onPress={() => navigation.navigate('코로나정보')}>
+            <TouchableOpacity style={styles.footerSlider}>
               <Image
                 source={Images.Thermo}
                 style={{height: 80, width: '100%', resizeMode: 'stretch'}}
@@ -174,7 +164,7 @@ const styles = StyleSheet.create({
     flex: 1 / 2,
     // height: 60,
     marginTop: 10,
-    borderRadius: 10,
+    borderRadius: 20,
     overflow: 'hidden',
     // paddingVertical: 10
     // backgroundColor: '#98C8C1',
@@ -184,7 +174,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: Colors.backgroundColor,
+    // backgroundColor: Colors.backgroundColor,
     height: height / 2,
   },
   cardHolderWrapper: {
@@ -224,4 +214,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default HomeScreenSuccess;

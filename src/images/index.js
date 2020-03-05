@@ -35,9 +35,16 @@ export default Images = {
   HomeIcon: require('./HomeIcon/HomeIcon2x.png'),
   ReserveIcon: require('./ReserveIcon/ReserveIcon.png'),
   userIcon: require('./UserIcon/UserIcon.png'),
-  CardTopHolder: require('./idCard.png'),
+  // CardTopHolder: require('./idCard.png'),
   Notification: require('./notification.png'),
+  Bg1: require('./BG1.png'),
+  Bg2: require('./bg2.png'),
+  Thermo: require('./termo.png'),
+  testThermo: require('./component.png'),
+  CorrectIcon: require('./correct.png'),
+  // CardTopHolder: require('./idCard.png'),
+  // Notification: require('./notification.png'),
   Scanner: require('./Scanner.png'),
-  PhoneIcon: require('./icon_call/icon_call.png')
+  PhoneIcon: require('./icon_call/icon_call.png'),
 };
 // >>>>>>> 7f55deb4d019a12a126af676595af4876dee7dab

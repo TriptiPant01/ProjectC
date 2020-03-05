@@ -1,24 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
-    View, Text, StyleSheet, Image, ScrollView, ImageBackground, AppRegistry,
+    View,
+    Text,
+    StyleSheet,
+    Image,
+    ScrollView,
+    ImageBackground,
+    AppRegistry,
     TouchableOpacity,
-    Linking
-} from 'react-native'
+    Linking,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Header, TextInput, TextInputLeftIcon, CommonButton, CommonStyles } from '../commons'
+import {
+    Header,
+    TextInput,
+    TextInputLeftIcon,
+    CommonButton,
+    CommonStyles,
+} from '../commons';
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
 const DrawerScreen = ({ headerTitle, navigation }) => {
-    const onSuccess = (e) => {
-        Linking
-            .openURL(e.data)
-            .catch(err => console.error('An error occured', err));
-    }
+    const onSuccess = e => {
+        Linking.openURL(e.data).catch(err =>
+            console.error('An error occured', err),
+        );
+    };
 
     return (
         <View style={styles.wrapper}>
             <View style={styles.header}>
-
                 <Text style={styles.headerText}>안티코 검사자용</Text>
                 <Icon
                     name="menu"
@@ -26,27 +37,19 @@ const DrawerScreen = ({ headerTitle, navigation }) => {
                     color="black"
                     style={{ marginRight: 5 }}
                     onPress={() => navigation.toggleDrawer()}
-
                 />
-
             </View>
-            <ImageBackground style={styles.content} source={require('../Images/Scanner.png')}>
-
+            <ImageBackground
+                style={styles.content}
+                source={require('../images/Scanner.png')}>
                 <QRCodeScanner
                     onRead={onSuccess}
-                    // markerStyle={{ height: 200, width: 200, borderWidth: 1, borderColor: 'red' }}
-                    cameraStyle={{ height: 200, width: 200, alignSelf: 'center' }}
-
-
-
+                    markerStyle={{ height: 300, width: 300 }}
                 />
-
             </ImageBackground>
-
-
         </View>
-    )
-}
+    );
+};
 export default DrawerScreen;
 
 const styles = StyleSheet.create({
@@ -55,10 +58,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignContent: 'flex-start',
         // zIndex: 2
-
     },
     buttonStyle: {
-        margin: 20
+        margin: 20,
     },
     header: {
         flex: 1,
@@ -67,19 +69,15 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginHorizontal: 20,
-
-
     },
     content: {
         flex: 5,
-        // justifyContent: 'center',
-        // alignItems: 'center'
         // backgroundColor: 'red'
     },
     headerText: {
         fontSize: 32,
         lineHeight: 39,
-        color: '#000000'
+        color: '#000000',
     },
     centerText: {
         flex: 1,
@@ -98,5 +96,4 @@ const styles = StyleSheet.create({
     buttonTouchable: {
         padding: 16,
     },
-})
-
+});

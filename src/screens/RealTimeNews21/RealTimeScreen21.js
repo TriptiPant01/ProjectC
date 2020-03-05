@@ -9,7 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-import Images from '../../Images';
+import Images from '../../images';
 
 const { height, width } = Dimensions.get('window');
 const data = [
@@ -42,8 +42,7 @@ const RealTimeContainer = ({
   logoFirst,
   logoSecond,
   newsIcon,
-  click
-
+  click,
 }) => {
   return (
     <TouchableOpacity
@@ -53,9 +52,7 @@ const RealTimeContainer = ({
         backgroundColor: 'white',
         marginHorizontal: 15,
         marginVertical: 10,
-      }}
-
-    >
+      }}>
       <View style={{ flexDirection: 'row', marginVertical: 8 }}>
         <Image
           source={logoIcon}
