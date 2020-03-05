@@ -4,8 +4,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
 import {
-  Header,../../images
-TextInput,
+  Header,
+  TextInput,
   TextInputLeftIcon,
   CommonButton,
   CommonStyles,

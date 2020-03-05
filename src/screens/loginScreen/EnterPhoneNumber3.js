@@ -4,8 +4,8 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 // import { Input } from 'react-native-elements';
 
 import {
-  Header,../../images
-TextInput,
+  Header,
+  TextInput,
   TextInputLeftIcon,
   CommonButton,
   CommonStyles,
